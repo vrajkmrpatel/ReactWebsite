@@ -35,7 +35,7 @@ export default function TextForm(props) {
     fontSize: "15px",
   };
   return (
-    <div>
+    <div className="container" style={{color: props.mode==='dark'?'white':'#042743'}}>
       <h1>{props.heading}</h1>
       <div className="form-floating my-3">
         <textarea

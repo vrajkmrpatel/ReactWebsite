@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <div className="container my-3"style={{color: props.mode==='dark'?'white':'#042743'}}>
       <footer className="page-footer font-small blue">

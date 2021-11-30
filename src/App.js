@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
+import Footer from './components/Footer';
 
  
 function App() {
@@ -21,10 +22,12 @@ function App() {
     <>
     {/* <Navbar title="TextUtils" aboutText="About TextUtils" /> */}
     {/* <Navbar/> */}
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+    <Navbar title="TextConverter" mode={mode} toggleMode={toggleMode} />
     <div className="container my-3">
     <TextForm heading="Enter the text to analyze below" mode={mode}/>
+    <Footer mode={mode}/>
     </div>
+    
     </> 
   );
 }

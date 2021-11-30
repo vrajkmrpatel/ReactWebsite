@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="container my-3">
+    <div className="container my-3"style={{color: props.mode==='dark'?'white':'#042743'}}>
       <footer className="page-footer font-small blue">
         <div className="footer-copyright text-center py-3">
           © 2021 Copyright:

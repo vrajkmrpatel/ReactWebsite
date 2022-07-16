@@ -5,7 +5,7 @@ export default function Footer(props) {
     <div className="container my-3"style={{color: props.mode==='dark'?'white':'#042743'}}>
       <footer className="page-footer font-small blue">
         <div className="footer-copyright text-center py-3">
-          © 2021 Copyright:
+          © 2022 Copyright:
           <a href="https://vrajpatel.w3spaces.com/"> Vraj Patel</a>
         </div>
       </footer>

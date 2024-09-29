@@ -1,35 +1,35 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
-import React, { useState } from 'react';
-import Footer from './components/Footer';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import TextForm from "./components/TextForm";
+import React, { useState } from "react";
+import Footer from "./components/Footer";
 
- 
 function App() {
-  const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
+    const [mode, setMode] = useState("light"); // Whether dark mode is enabled or not
 
-  const toggleMode = ()=>{
-    if(mode === 'light'){
-      setMode('dark');
-      document.body.style.backgroundColor = '#042743';
-    }
-    else{
-      setMode('light');
-      document.body.style.backgroundColor = 'white';
-    }
-  }
-  return (
-    <>
-    {/* <Navbar title="TextUtils" aboutText="About TextUtils" /> */}
-    {/* <Navbar/> */}
-    <Navbar title="TextConverter" mode={mode} toggleMode={toggleMode} />
-    <div className="container my-3">
-    <TextForm heading="Enter the text to analyze below" mode={mode}/>
-    <Footer mode={mode}/>
-    </div>
-    
-    </> 
-  );
+    const toggleMode = () => {
+        if (mode === "light") {
+            setMode("dark");
+            document.body.style.backgroundColor = "#042743";
+        } else {
+            setMode("light");
+            document.body.style.backgroundColor = "white";
+        }
+    };
+    return (
+        <>
+            {/* <Navbar title="TextUtils" aboutText="About TextUtils" /> */}
+            {/* <Navbar/> */}
+            <Navbar title="TextConverter" mode={mode} toggleMode={toggleMode} />
+            <div className="container my-3">
+                <TextForm
+                    heading="Enter the text to analyze below"
+                    mode={mode}
+                />
+                <Footer mode={mode} />
+            </div>
+        </>
+    );
 }
 
 export default App;
